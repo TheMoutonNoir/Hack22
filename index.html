@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+  
+    </head>
+    <body>
+        <div class="header">Header</div>
+
+        <div class="container">
+            <div
+                class="choice"
+                onclick="console.log('lol')"
+                style="
+                    background-color: red;
+                    cursor: pointer;
+                "
+            >
+                Test
+            </div>
+
+            <div
+                class="choice"
+                onclick="console.log('lol')"
+                style="
+                    background-color: blue;
+                    cursor: pointer;
+                "
+            >
+                Test
+                <div
+                class="choice"
+                style="
+                    width: 50px;
+                    height: 100px;
+                    background-color: yellow;
+                    cursor: auto
+                "
+                onclick="event.stopPropagation();"
+            ></div> 
+            </div>
+        </div>
+    </body>
+</html>

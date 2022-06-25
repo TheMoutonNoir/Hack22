@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+html {
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.choice {
+    width: 50vw;
+    height: 100vh;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .choice {
+        width: 100vw;
+        height: 50vh;
+    }
+  }
