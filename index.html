@@ -9,41 +9,36 @@
     </head>
   
     </head>
-    <body>
+    <body onload="startGame()">
         <div class="header">Header</div>
 
         <div class="container">
             <div
                 class="choice"
-                onclick="console.log('lol')"
+                id="choice1"
                 style="
                     background-color: red;
-                    cursor: pointer;
                 "
             >
-                Test
+            <h1 id="choice1Text"></h1>
+            <h1 id="choice1Value"></h1>
+            
             </div>
+
+            
 
             <div
                 class="choice"
-                onclick="console.log('lol')"
+                id="choice2"
                 style="
                     background-color: blue;
-                    cursor: pointer;
                 "
             >
-                Test
-                <div
-                class="choice"
-                style="
-                    width: 50px;
-                    height: 100px;
-                    background-color: yellow;
-                    cursor: auto
-                "
-                onclick="event.stopPropagation();"
-            ></div> 
+            <h1 id="choice2Text"></h1>
+            <h1 id="choice2Value"></h1>
             </div>
         </div>
+
+        <script src="main.js"></script>
     </body>
 </html>

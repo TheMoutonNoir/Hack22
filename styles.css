@@ -1,12 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-  }
+}
 
 html {
     margin: 0;
     padding: 0;
-  }
+}
+
+.header {
+    height: 5vh;
+}
 
 .container {
     display: flex;
@@ -15,7 +19,7 @@ html {
 
 .choice {
     width: 50vw;
-    height: 100vh;
+    height: 95vh;
 }
 
 
@@ -27,6 +31,6 @@ html {
     
     .choice {
         width: 100vw;
-        height: 50vh;
+        height: 47.5vh;
     }
   }
