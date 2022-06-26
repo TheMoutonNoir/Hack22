@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import Example from './Button'
 
-function Header(){
+function Header(props){
     window.localStorage.setItem('highscore', '1')
-    const [score, setScore] = useState(0)
+    const [score, setScore] = useState(props)
     const [highscore, setHighscore] = useState(window.localStorage.getItem('highscore'))
 
     return (<div>
-        <div class='container scorebg'>
+        <div class='container scorebg header-p'>
             <h1 class="item" style={{textAlign: "start"}}>
                 Score: { score }
             </h1>
@@ -18,7 +17,6 @@ function Header(){
                 High Score: { highscore }
             </h1>
         </div>
-        <Example></Example>
       </div>)
 }
 
