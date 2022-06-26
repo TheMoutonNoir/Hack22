@@ -180,6 +180,26 @@ nav a {
   object-fit: cover;
 }
 
+#choice1{
+  position:absolute;
+  background: rgba(0, 0, 0, 0.78);
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+  font-size:2vw;
+  color:white;
+ 
+}
+
+
+#choice2{
+  position:absolute;
+  background: rgba(0, 0, 0, 0.78);
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+  font-size:2vw;
+  color:white;
+ margin-left:80vw;
+}
 
 .startMenu {
   display: flex;

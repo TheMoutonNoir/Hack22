@@ -13,10 +13,14 @@ function Choice(props) {
         onStart();
         setImg1(info1.imageSrc);
         setImg2(info2.imageSrc);
+        setName1(info1.name);
+        setName2(info2.name);
     }, []);
 
     const [img1, setImg1] = useState(info1.imageSrc);
     const [img2, setImg2] = useState(info2.imageSrc);
+    const [name1, setName1] = useState(info1.name);
+    const [name2, setName2] = useState(info2.name);
     const [score, setScore] = useState(0);
 
     
@@ -276,12 +280,16 @@ function Choice(props) {
             props.increaseScore();
             setImg1(info1.imageSrc);
             setImg2(info2.imageSrc);
+            setName1(info1.name);
+            setName2(info2.name);
         } else {
             console.log('lose');
             onStart();
             props.loseScore();
             setImg1(info1.imageSrc);
             setImg2(info2.imageSrc);
+            setName1(info1.name);
+            setName2(info2.name);
         }
     }
 
@@ -312,9 +320,10 @@ function Choice(props) {
          
         <div>
             <div class="container">
+                <div id = "choice1">{name1}</div>
                 <img class="img-choice" src={img1} id={'1'} onClick={() => pick(info1)}></img>
                 <b></b>
-
+                <div id = "choice2">{name2}</div>
                 <img class="img-choice" src={img2} id={'2'} onClick={() => pick(info2)}></img>
             </div>
         </div>
