@@ -1,15 +1,12 @@
 import React from 'react'
-import Example from 'components/Button'
-import Choice from 'components/Choice.js'
+import { useState } from 'react';
+import Header from 'components/Header'
+import Choice from 'components/Game'
+import Game from '../components/Game';
 
 export default () => (
-
-
-  
-
-  
   <div style={{ textAlign: 'center' }}>
-   
-    <Choice></Choice>
+  <Game></Game>
   </div>
 )
+

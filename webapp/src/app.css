@@ -142,3 +142,35 @@ nav a {
   font-weight:bold;
  
 }
+.scorebg{
+  color: white;
+  background-image: url('./assets/img/header_img.png');
+  background-color: #1E1E24;
+
+}
+
+
+.container { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-p{
+  padding: 0rem 3rem 0rem 2rem;
+}
+
+.icon-i{
+  margin: auto;
+  height: 4rem;
+}
+
+.item{
+  opacity: 1;
+  width: 33.33%
+}
+
+.img-choice{
+  width: 50%;
+}
+
+
