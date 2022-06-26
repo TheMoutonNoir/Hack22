@@ -126,6 +126,7 @@ nav a {
   font-size:1.5vw;
   font-weight:bold;
   margin-right:15vw;
+  cursor:pointer;
   
 }
 
@@ -141,6 +142,7 @@ nav a {
   width: 15vw;
   font-size:1.5vw;
   font-weight:bold;
+  cursor:pointer;
  
 }
 .scorebg{
@@ -172,6 +174,7 @@ nav a {
 
 .img-choice{
   width: 50%;
+  cursor:pointer;
 }
 
 
@@ -186,6 +189,11 @@ nav a {
   background-image: url(../assets/StartImage.png);
   background-size: 130vw;
   background-position: center;
+}
+
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 
 .startMenu > .title {
