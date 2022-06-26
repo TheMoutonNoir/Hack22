@@ -1,7 +1,3 @@
-let highScore = 0;
-let currentScore = 0;
-
-
 const choice1Text = document.getElementById('choice1Text');
 const choice2Text = document.getElementById('choice2Text');
 const choice3Image = document.getElementById("choice1Image");
@@ -80,9 +76,4 @@ function randomIdFromData() {
 
 function revealChoice2() {
     choice2Value.textContent = data[id2].value;
-}
-
-function win() {
-    currentScore += 1;
-    if (score > highScore) highScore = currentScore;
 }

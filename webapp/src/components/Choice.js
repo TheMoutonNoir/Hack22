@@ -321,10 +321,11 @@ function Choice(props) {
         <div>
             <div class="container">
                 <div id = "choice1">{name1}</div>
-                <img class="img-choice" src={img1} id={'1'} onClick={() => pick(info1)}></img>
+                <img class="img-choice" src={img1} id={'choice_1'} onClick={() => pick(info1)}></img>
                 <b></b>
+                <div id = "Or"> OR </div>
                 <div id = "choice2">{name2}</div>
-                <img class="img-choice" src={img2} id={'2'} onClick={() => pick(info2)}></img>
+                <img class="img-choice" src={img2} id={'choice_2'} onClick={() => pick(info2)}></img>
             </div>
         </div>
     );

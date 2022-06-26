@@ -156,6 +156,7 @@ nav a {
 .container { 
   display: flex;
   justify-content: space-between;
+  background-color: #1e1e24;
 }
 
 .header-p{
@@ -256,4 +257,41 @@ button:hover {
   margin-top: 1em;
   border-radius: 1000px;
   border-style: solid;
+}
+
+
+#choice_1{
+  width: 50vw;
+  height: 93.2vh;
+  object-fit:cover;
+  opacity: 35%;
+}
+
+#choice_2{
+  width: 50vw;
+  height: 93.2vh;
+  object-fit:cover;
+  opacity: 35%;
+}
+
+#Or{
+  color:white;
+  border-color:white;
+  border-style:solid;
+  border-radius:50%;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 5.2083333333333333333333333333333vw;
+  position:absolute;
+  top:23vw;
+  left:45.260416666666666666666666666667vw;
+  border: 0.10416666666666666666666666666667vw solid #FFFFFF;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  width: 9.53125vw;
+  height: 9.53125vw;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }

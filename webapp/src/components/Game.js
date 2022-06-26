@@ -9,7 +9,7 @@ function Game(){
     const [score, setScore] = useState(0)
     const [gameState, setGameState] = useState(0);
     //0 -> Main, 1 -> In Game, 2-> Lose
-    // const [highscore, setHighscore] = useState(0)
+    const [highScore, setHighscore] = useState(0)
 
     let props = {
         increaseScore: increaseScore,
@@ -21,7 +21,10 @@ function Game(){
     }
 
     function loseScore(){
-        if(score > window.localStorage.getItem('highscore')) window.localStorage.setItem('highscore', score)
+        if(score > highScore || highScore == null) {
+            setHighscore(score);
+            window.localStorage.setItem('highScore', String(score))
+        }
         
         setGameState(2);
     }
@@ -37,7 +40,7 @@ function Game(){
         <div id = {"GOBG"}>
         <h1 id = "GO">Game Over!</h1>
         <h2 id = "pmp">Practice makes perfect.</h2>
-        <div id = "scores"><h1 id = "finalScore">Your final score: {score}</h1> <h1 id = "highScore">Your high score: {score}</h1></div>
+        <div id = "scores"><h1 id = "finalScore">Your final score: {score}</h1> <h1 id = "highScore">Your high score: {highScore}</h1></div>
         <div id = "Buttons"><button id = "PA" onClick = {restartGame}>Play Again</button> <button id = "MM" onClick = {() => setGameState(0)}>Main Menu</button></div>
 
     </div>
