@@ -1,0 +1,62 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "C:\\Code\\Hack22\\webapp\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      {
+        "location": "C:\\Code\\Hack22\\webapp\\src\\pages"
+      }
+    ],
+    "C:\\Code\\Hack22\\webapp\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "C:\\Code\\Hack22\\webapp\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "C:\\Code\\Hack22\\webapp"
+  ],
+  "paths": {
+    "ROOT": "C:\\Code\\Hack22\\webapp",
+    "SRC": "C:\\Code\\Hack22\\webapp\\src",
+    "DIST": "C:\\Code\\Hack22\\webapp\\dist",
+    "ASSETS": "C:\\Code\\Hack22\\webapp\\dist",
+    "PLUGINS": "C:\\Code\\Hack22\\webapp\\plugins",
+    "TEMP": "C:\\Code\\Hack22\\webapp\\tmp",
+    "ARTIFACTS": "C:\\Code\\Hack22\\webapp\\artifacts",
+    "PUBLIC": "C:\\Code\\Hack22\\webapp\\public",
+    "NODE_MODULES": "C:\\Code\\Hack22\\webapp\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Code\\Hack22\\webapp\\node_modules",
+    "PACKAGE": "C:\\Code\\Hack22\\webapp\\package.json",
+    "HTML_TEMPLATE": "C:\\Code\\Hack22\\webapp\\dist\\index.html",
+    "STATIC_DATA": "C:\\Code\\Hack22\\webapp\\dist\\staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}

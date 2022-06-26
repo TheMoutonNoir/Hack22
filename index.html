@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+  
+    </head>
+    <body onload="startGame()">
+        <div class="header">Header</div>
+
+        <div class="container">
+            <div
+                class="choice"
+                id="choice1"
+                style="
+                    background-color: red;
+                "
+            >
+            <h1 id="choice1Text"></h1>
+            <h1 id="choice1Value"></h1>
+            <img id = "choice1Image" onclick = "pick(1)"></img>
+            
+            </div>
+
+            
+
+            <div
+                class="choice"
+                id="choice2"
+                style="
+                    background-color: blue;
+                "
+            >
+            <h1 id="choice2Text"></h1>
+            <h1 id="choice2Value"></h1>
+            <img id = "choice2Image" onclick = "pick(2)"></img>
+
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

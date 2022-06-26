@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  scroll-behavior: smooth;
+  --green: #129B0D;
+  --dark-gray: #1e1e24;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+ 
+  
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+ 
+  padding: 0;
+  margin: 0;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #108db8;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  width: 100%;
+  background: #108db8;
+}
+
+nav a {
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.content {
+  padding: 0;
+}
+
+#GOBG{
+  position:absolute;
+  height:100vh;
+  width:100%;
+  background: transparent url("./pages/Game Over Images/Image 6.png") 0% 0% no-repeat padding-box;
+  background-size:130vw;
+ background-position: center;
+ top:0;
+ left:0;
+ 
+ overflow:hidden;
+ display:flex;
+ flex-direction:column;
+
+ justify-content: center;
+
+ 
+  
+  background-color: black;
+  color:white;
+  padding-bottom:20vw;
+  font-family: 'Open Sans', sans-serif;
+  
+ 
+}
+
+#GO{
+  color:white;
+  font-size:5vw;
+  
+  padding-bottom:1vw;
+  
+}
+
+#pmp{
+  font-weight:100;
+  font-size:1.5vw;
+  padding-bottom:12vh;
+}
+
+#scores{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  
+  
+
+}
+
+#highScore{
+  padding-left: 15vw;
+}
+
+#Buttons{
+  padding-top: 5vh;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  
+ 
+
+
+}
+
+#PA{
+  color:white;
+  background-color: #129B0D;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5vw;
+  border-style:solid;
+  border-color:white;
+  border-width: 0.3vh;
+  height: 10vh;
+  width: 15vw;
+  font-size:1.5vw;
+  font-weight:bold;
+  margin-right:15vw;
+  cursor:pointer;
+  
+}
+
+#MM{
+  color:white;
+  background-color: rgba(0, 0, 0, 0.377);
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5vw;
+  border-style:solid;
+  border-color:white;
+  border-width: 0.3vh;
+  height: 10vh;
+  width: 15vw;
+  font-size:1.5vw;
+  font-weight:bold;
+  cursor:pointer;
+ 
+}
+.scorebg{
+  color: white;
+  background-image: url('./assets/img/header_img.png');
+  background-color: #1E1E24;
+
+}
+
+
+.container { 
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e1e24;
+}
+
+.header-p{
+  padding: 0rem 3rem 0rem 2rem;
+  height: 10vh;
+}
+
+.icon-i{
+  margin: auto;
+  height: 4rem;
+}
+
+.item{
+  opacity: 1;
+  width: 33.33%
+}
+
+.img-choice{
+  width: 50%;
+  height: 90vh;
+  cursor:pointer;
+  object-fit: cover;
+}
+
+#choice1{
+  position:absolute;
+  background: rgba(0, 0, 0, 0.78);
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+  font-size:2vw;
+  color:white;
+ 
+}
+
+
+#choice2{
+  position:absolute;
+  background: rgba(0, 0, 0, 0.78);
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+  font-size:2vw;
+  color:white;
+ margin-left:80vw;
+}
+
+.startMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--dark-gray);
+  background-image: url(../assets/StartImage.png);
+  background-size: 130vw;
+  background-position: center;
+}
+
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.startMenu > .title {
+  font-size: 100px;
+  margin: 0;
+  color: var(--green);
+  font-weight: 800;
+  text-shadow: 0.01em 0px #ffffff, -0.01em 0px #ffffff, 0px 0.01em #ffffff, 0px -0.01em #ffffff, 0px 6px 6px black;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: fit-content;
+  line-height: 0.9em;
+}
+
+.startMenu > .subtitleContainer > h2 {
+  color:white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.startMenu > .subtitleContainer > h3 {
+  color:white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.startMenu > .play {
+  all: unset;
+  cursor: pointer;
+  font-size: 80px;
+  background-color: var(--green);
+  color: white;
+  font-weight: 700;
+  width: 5.5em;
+  height: 1.4em;
+  margin-top: 1em;
+  border-radius: 1000px;
+  border-style: solid;
+}
+
+
+#choice_1{
+  width: 50vw;
+  height: 93.2vh;
+  object-fit:cover;
+  opacity: 35%;
+}
+
+#choice_2{
+  width: 50vw;
+  height: 93.2vh;
+  object-fit:cover;
+  opacity: 35%;
+}
+
+#Or{
+  color:white;
+  border-color:white;
+  border-style:solid;
+  border-radius:50%;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 5.2083333333333333333333333333333vw;
+  position:absolute;
+  top:23vw;
+  left:45.260416666666666666666666666667vw;
+  border: 0.10416666666666666666666666666667vw solid #FFFFFF;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  width: 9.53125vw;
+  height: 9.53125vw;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
