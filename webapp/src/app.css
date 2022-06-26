@@ -35,7 +35,7 @@ nav a {
 
 .scorebg{
   color: white;
-  background-image: url('../assets/img/header_img.png');
+  background-image: url('./assets/img/header_img.png');
   background-color: #1E1E24;
 
 }

@@ -7,8 +7,6 @@ let data;
 
 
 function Choice(props) {
-    
-    const increaseScore = props.increaseScore
     //onStart();
     useEffect(() => {
         console.log('j');
@@ -271,20 +269,16 @@ function Choice(props) {
 
     function pick(info) {
         console.log('choice');
-        if (info.value == Math.max(info1.value, info2.value)) {
+        if (info.value === Math.max(info1.value, info2.value)) {
             console.log('win');
-            alert('YOU DID IT');
             randomizeNext();
-            increaseScore()
-            setScore(score + 1);
+            props.increaseScore();
             setImg1(info1.imageSrc);
             setImg2(info2.imageSrc);
         } else {
             console.log('lose');
-            alert('YOU GOT IT WRONG LMFAO');
-
             onStart();
-            setScore(0);
+            props.loseScore();
             setImg1(info1.imageSrc);
             setImg2(info2.imageSrc);
         }
@@ -315,7 +309,6 @@ function Choice(props) {
         //<p>hi</p>
         // </div>
         <div>
-            <h1>{score}</h1>
             <div class="container">
                 <img class="img-choice" src={img1} id={'1'} onClick={() => pick(info1)}></img>
                 <b></b>
