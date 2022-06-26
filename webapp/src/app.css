@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap');
+
 * {
   scroll-behavior: smooth;
 }
@@ -9,6 +11,15 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+ 
+  
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+ 
+  padding: 0;
+  margin: 0;
   
 }
 
@@ -34,5 +45,100 @@ nav a {
 }
 
 .content {
-  padding: 1rem;
+  padding: 0;
+}
+
+#GOBG{
+  position:absolute;
+  height:100vh;
+  width:100%;
+  background: transparent url("./pages/Game Over Images/Image 6.png") 0% 0% no-repeat padding-box;
+  background-size:130vw;
+ background-position: center;
+ top:0;
+ left:0;
+ 
+ overflow:hidden;
+ display:flex;
+ flex-direction:column;
+
+ justify-content: center;
+
+ 
+  
+  background-color: black;
+  color:white;
+  padding-bottom:20vw;
+  font-family: 'Open Sans', sans-serif;
+  
+ 
+}
+
+#GO{
+  color:white;
+  font-size:5vw;
+  
+  padding-bottom:1vw;
+  
+}
+
+#pmp{
+  font-weight:100;
+  font-size:1.5vw;
+  padding-bottom:12vh;
+}
+
+#scores{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  
+  
+
+}
+
+#highScore{
+  padding-left: 15vw;
+}
+
+#Buttons{
+  padding-top: 5vh;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  
+ 
+
+
+}
+
+#PA{
+  color:white;
+  background-color: #129B0D;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5vw;
+  border-style:solid;
+  border-color:white;
+  border-width: 0.3vh;
+  height: 10vh;
+  width: 15vw;
+  font-size:1.5vw;
+  font-weight:bold;
+  margin-right:15vw;
+  
+}
+
+#MM{
+  color:white;
+  background-color: rgba(0, 0, 0, 0.377);
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5vw;
+  border-style:solid;
+  border-color:white;
+  border-width: 0.3vh;
+  height: 10vh;
+  width: 15vw;
+  font-size:1.5vw;
+  font-weight:bold;
+ 
 }

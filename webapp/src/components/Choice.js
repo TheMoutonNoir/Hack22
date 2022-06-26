@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 let info1 = { name: '', value: '', imageSrc: '' };
 let info2 = { name: '', value: '', imageSrc: '' };
 let data;
-
+let lost = false;
 
 function Choice() {
     
@@ -24,6 +24,7 @@ function Choice() {
     
 
     function onStart() {
+        lost = false;
         console.log('start');
         data = [
             {
@@ -281,11 +282,16 @@ function Choice() {
         } else {
             console.log('lose');
             alert('YOU GOT IT WRONG LMFAO');
+            lost = true;
+            
+            setTimeout(() => {setImg1();}, 1000);
 
-            onStart();
-            setScore(0);
-            setImg1(info1.imageSrc);
-            setImg2(info2.imageSrc);
+            
+
+            // onStart();
+            // setScore(0);
+            // setImg1(info1.imageSrc);
+            // setImg2(info2.imageSrc);
         }
     }
 
@@ -308,19 +314,43 @@ function Choice() {
         data.splice(id2, 1);
     }
 
-    return (
-        //<div style = {{backgroundImage: `url("https://i.natgeofe.com/n/46b07b5e-1264-42e1-ae4b-8a021226e2d0/domestic-cat_thumb_square.jpg")`}}>
+   if(lost == true){
+   
+        
+             return(
+                
+                <body id = {"GOBG"}>
+                    <h1 id = "GO">Game Over!</h1>
+                    <h2 id = "pmp">Practice makes perfect.</h2>
+                    <div id = "scores"><h1 id = "finalScore">Your final score: {score}</h1> <h1 id = "highScore">Your high score: {score}</h1></div>
+                    <div id = "Buttons"><button id = "PA" onClick = {() => {lost = false;  onStart();setImg1();}}>Play Again</button> <button id = "MM">Main Menu</button></div>
 
-        //<p>hi</p>
-        // </div>
-        <div>
-            <h1>{score}</h1>
-            <img src={img1} id={'1'} onClick={() => pick(info1)}></img>
-            <b></b>
+                </body>
+                
 
-            <img src={img2} id={'2'} onClick={() => pick(info2)}></img>
-        </div>
-    );
+
+
+             );   
+
+             }else{
+                return (
+       
+       
+                    <div>
+                        <h1>{score}</h1>
+                        <img src={img1} id={'1'} onClick={() => pick(info1)}></img>
+                        <b></b>
+            
+                        <img src={img2} id={'2'} onClick={() => pick(info2)}></img>
+            
+            
+                    </div>
+                );
+             }
+
+   
+
+  
 }
 
 export default Choice;
