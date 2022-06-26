@@ -36,3 +36,35 @@ nav a {
 .content {
   padding: 1rem;
 }
+
+#Or{
+  color:white;
+  border-color:white;
+  border-style:solid;
+  border-radius:50%;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 100px;
+  position:absolute;
+  top:53%;
+  left:45.26%;
+  z-index: 0;
+  border: 2px solid #FFFFFF;
+  opacity: 1;
+  backdrop-filter: blur(20px);
+  width: 183px;
+  height: 183px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#choice_1{
+  width:48vw;
+  z-index: -1;
+}
+
+#choice_2{
+  width:48vw;
+  z-index: -1;
+}

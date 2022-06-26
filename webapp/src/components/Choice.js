@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
 let info1 = { name: '', value: '', imageSrc: '' };
 let info2 = { name: '', value: '', imageSrc: '' };
 let data;
@@ -315,11 +314,12 @@ function Choice() {
         // </div>
         <div>
             <h1>{score}</h1>
-            <img src={img1} id={'1'} onClick={() => pick(info1)}></img>
+            <img src={img1} id={'choice_1'} onClick={() => pick(info1)}></img>
             <b></b>
-
-            <img src={img2} id={'2'} onClick={() => pick(info2)}></img>
+            <div id = "Or"> OR </div>
+            <img src={img2} id={'choice_2'} onClick={() => pick(info2)}></img>
         </div>
+        
     );
 }
 
