@@ -182,32 +182,27 @@ nav a {
 }
 
 #choice1{
+  top: 21vw;
+  left: 6vw;
   position:absolute;
   font-family: 'Open Sans', sans-serif;
   font-weight:bold;
   font-size:2vw;
   color:white;
   max-width: 40vw;
+  text-align: center;
 }
 
 
 #choice2{
+  top: 10.5em;
   position:absolute;
-  right:0;
+  right:6.5em;
   font-family: 'Open Sans', sans-serif;
   font-weight:bold;
   font-size:2vw;
   color:white;
   max-width: 40vw;
-}
-
-#choice1Value{
-  top: 6em;
-  position:absolute;
-  font-family: 'Open Sans', sans-serif;
-  font-weight:bold;
-  font-size:2vw;
-  color:white;
 }
 
 #choice2Value{
@@ -314,4 +309,21 @@ button:hover {
   display:flex;
   align-items: center;
   justify-content: center;
+}
+
+
+#choice1Value{
+  top: 28vw;
+  left: 20.5vw;
+  position:absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+  font-size:0.8vw;
+  color:white;
+  text-align: center;
+}
+
+#emphasis{
+  color: #15D90E;
+  font-size: 2.5vw;
 }

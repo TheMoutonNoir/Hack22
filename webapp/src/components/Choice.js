@@ -323,7 +323,7 @@ function Choice(props) {
         <div>
             <div class="container">
                 <div id="choice1">"{name1}"</div>
-                <div id="choice1Value">which saves {value1} tons of CO₂</div>
+                <div id="choice1Value">which saves <div id="emphasis">{value1} tons</div> of CO₂</div>
                 <img
                     class="img-choice"
                     src={img1}
