@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
   scroll-behavior: smooth;
+  --green: #129B0D;
+  --dark-gray: #1e1e24;
 }
 
 body {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
-    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
   margin: 0;
@@ -174,3 +175,54 @@ nav a {
 }
 
 
+.startMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--dark-gray);
+  background-image: url(../assets/StartImage.png);
+  background-size: 130vw;
+  background-position: center;
+}
+
+.startMenu > .title {
+  font-size: 100px;
+  margin: 0;
+  color: var(--green);
+  font-weight: 800;
+  text-shadow: 0.01em 0px #ffffff, -0.01em 0px #ffffff, 0px 0.01em #ffffff, 0px -0.01em #ffffff, 0px 6px 6px black;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: fit-content;
+  line-height: 0.9em;
+}
+
+.startMenu > .subtitleContainer > h2 {
+  color:white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.startMenu > .subtitleContainer > h3 {
+  color:white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.startMenu > .play {
+  all: unset;
+  cursor: pointer;
+  font-size: 80px;
+  background-color: var(--green);
+  color: white;
+  font-weight: 700;
+  width: 5.5em;
+  height: 1.4em;
+  margin-top: 1em;
+  border-radius: 1000px;
+  border-style: solid;
+}
