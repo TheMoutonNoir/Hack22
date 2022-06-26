@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
+
+let info1 = { name: '', value: '', imageSrc: '' };
+let info2 = { name: '', value: '', imageSrc: '' };
+
+
 function Choice() {
-    var info1 = { name: '', value: '', imageSrc: '' };
-    var info2 = { name: '', value: '', imageSrc: '' };
+    
 
     //onStart();
     useEffect(() => {
