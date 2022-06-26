@@ -1,9 +1,8 @@
 import React from 'react'
-import Example from 'components/Button'
+import Header from 'components/Header'
 
 export default () => (
   <div style={{ textAlign: 'center' }}>
-    <h1>Welcome to React-Static</h1>
-    <Example></Example>
+    <Header></Header>
   </div>
 )

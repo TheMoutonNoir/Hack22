@@ -32,6 +32,28 @@ nav a {
   display: inline-block;
 }
 
-.content {
-  padding: 1rem;
+.scorebg{
+  color: white;
+  background-image: url('../assets/img/header_img.png');
+  background-color: #1E1E24;
+
 }
+
+
+.container { 
+  padding: 0rem 3rem 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-i{
+  margin: auto;
+  height: 4rem;
+}
+
+.item{
+  opacity: 1;
+  width: 33.33%
+}
+
+
