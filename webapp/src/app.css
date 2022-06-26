@@ -160,6 +160,7 @@ nav a {
 
 .header-p{
   padding: 0rem 3rem 0rem 2rem;
+  height: 10vh;
 }
 
 .icon-i{
@@ -174,7 +175,9 @@ nav a {
 
 .img-choice{
   width: 50%;
+  height: 90vh;
   cursor:pointer;
+  object-fit: cover;
 }
 
 
