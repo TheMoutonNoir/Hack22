@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
 let info1 = { name: '', value: '', imageSrc: '' };
 let info2 = { name: '', value: '', imageSrc: '' };
 let data;
@@ -15,15 +14,19 @@ function Choice(props) {
         setImg2(info2.imageSrc);
         setName1(info1.name);
         setName2(info2.name);
+        setValue1(info1.value);
+        setValue2(info2.value);
     }, []);
 
     const [img1, setImg1] = useState(info1.imageSrc);
     const [img2, setImg2] = useState(info2.imageSrc);
     const [name1, setName1] = useState(info1.name);
     const [name2, setName2] = useState(info2.name);
-    const [score, setScore] = useState(0);
+    const [value1, setValue1] = useState(info1.value);
+    const [value2, setValue2] = useState(info2.value);
+    const [showValue2, setShowValue2] = useState(false);
 
-    
+    const [score, setScore] = useState(0);
 
     function onStart() {
         lost = false;
@@ -282,6 +285,8 @@ function Choice(props) {
             setImg2(info2.imageSrc);
             setName1(info1.name);
             setName2(info2.name);
+            setValue1(info1.value);
+            setValue2(info2.value);
         } else {
             console.log('lose');
             onStart();
@@ -290,6 +295,8 @@ function Choice(props) {
             setImg2(info2.imageSrc);
             setName1(info1.name);
             setName2(info2.name);
+            setValue1(info1.value);
+            setValue2(info2.value);
         }
     }
 
@@ -312,23 +319,29 @@ function Choice(props) {
         data.splice(id2, 1);
     }
 
- 
-   
-        
-             return(
-                
-         
+    return (
         <div>
             <div class="container">
-                <div id = "choice1">{name1}</div>
-                <img class="img-choice" src={img1} id={'choice_1'} onClick={() => pick(info1)}></img>
+                <div id="choice1">"{name1}"</div>
+                <div id="choice1Value">which saves {value1} tons of CO₂</div>
+                <img
+                    class="img-choice"
+                    src={img1}
+                    id={'choice_1'}
+                    onClick={() => pick(info1)}
+                ></img>
                 <b></b>
-                <div id = "Or"> OR </div>
-                <div id = "choice2">{name2}</div>
-                <img class="img-choice" src={img2} id={'choice_2'} onClick={() => pick(info2)}></img>
+                <div id="Or"> OR </div>
+                <div id="choice2">"{name2}"</div>
+
+                <img
+                    class="img-choice"
+                    src={img2}
+                    id={'choice_2'}
+                    onClick={() => pick(info2)}
+                ></img>
             </div>
         </div>
     );
-
-             }
-export default Choice
+}
+export default Choice;
