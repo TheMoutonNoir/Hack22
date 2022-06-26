@@ -1,25 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+
 
 
 function Choice(){
-   
-    const [img1, setImg1] = useState(0);
-    const [img2, setImg2] = useState(0);
-   
+    let info1;
+    let info2;
     onStart();
 
-  let info1;
-  let info2;
-  let score = 0;
 
-
-
+    const [img1, setImg1] = useState(info1.imageSrc);
+    const [img2, setImg2] = useState(info2.imageSrc);
     
+   
 
+  
+    let score = 0;
     let data;
 
-
-
+  
 
 
     function onStart(){
@@ -260,7 +258,7 @@ function Choice(){
 
         data.splice(id1, 1)
 
-        this.setImg1(info1.imageSrc)
+        
 
         let id2 = randomIdFromData()
         info2 = data[id2]
@@ -284,7 +282,8 @@ function Choice(){
             alert("YOU GOT IT WRONG LMFAO")
             
             onStart()
-
+            setImg1(info1.imageSrc)
+            setImg2(info2.imageSrc)
 
 
         }
@@ -314,11 +313,11 @@ function Choice(){
 //<p>hi</p>
    // </div>
     <div>
-        <h1> {info1.name}</h1>
-        <img src = {info1.imageSrc} id = {"1"} onClick = {() => pick(info1)}></img>
+       
+        <img src = {img1} id = {"1"} onClick = {() => pick(info1)}></img>
         <b></b>
-        <h1> {info2.name}</h1>
-        <img src = {info2.imageSrc} id = {"2"} onClick = {() => pick(info2)}></img>
+       
+        <img src = {img2} id = {"2"} onClick = {() => pick(info2)} ></img>
         
     </div>
     
